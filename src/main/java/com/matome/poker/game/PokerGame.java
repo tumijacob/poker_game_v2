@@ -1,4 +1,4 @@
-package game;
+package com.matome.poker.game;
 
 public class PokerGame {
 

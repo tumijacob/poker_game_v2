@@ -1,4 +1,4 @@
-package game;
+package com.matome.poker.game;
 
 import org.junit.Before;
 import org.junit.Test;

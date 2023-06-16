@@ -1,9 +1,9 @@
-package game;
+package com.matome.poker.game;
 
-import game.enumerated.HandStrength;
-import game.enumerated.Rank;
-import game.enumerated.Suit;
-import game.exception.InsufficientCardsException;
+import com.matome.poker.game.enumerated.HandStrength;
+import com.matome.poker.game.enumerated.Rank;
+import com.matome.poker.game.enumerated.Suit;
+import com.matome.poker.game.exception.InsufficientCardsException;
 
 import java.util.*;
 

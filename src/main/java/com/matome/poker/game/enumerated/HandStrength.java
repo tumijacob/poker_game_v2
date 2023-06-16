@@ -1,4 +1,4 @@
-package game.enumerated;
+package com.matome.poker.game.enumerated;
 
 public enum HandStrength {
     STRAIGHT_FLUSH("Straight Flush"),

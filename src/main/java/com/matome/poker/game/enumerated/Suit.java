@@ -1,4 +1,4 @@
-package game.enumerated;
+package com.matome.poker.game.enumerated;
 
 public enum Suit {
     CLUBS("♣"), DIAMONDS("♦"), HEARTS("♥"), SPADES("♠");

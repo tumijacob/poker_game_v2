@@ -1,8 +1,8 @@
-package game;
+package com.matome.poker.game;
 
 
-import game.enumerated.Rank;
-import game.enumerated.Suit;
+import com.matome.poker.game.enumerated.Rank;
+import com.matome.poker.game.enumerated.Suit;
 
 public class Card {
     private Rank rank;

@@ -1,8 +1,9 @@
-package game;
+package com.matome.poker.game;
 
-import game.enumerated.HandStrength;
-import game.enumerated.Rank;
-import game.enumerated.Suit;
+import com.matome.poker.game.enumerated.HandStrength;
+import com.matome.poker.game.enumerated.Suit;
+import com.matome.poker.game.enumerated.Rank;
+import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -24,7 +25,7 @@ public class HandTest {
         hand.getCards().add(new Card(Rank.JACK, Suit.HEARTS));
         hand.getCards().add(new Card(Rank.TEN, Suit.HEARTS));
 
-        assertEquals(HandStrength.FLUSH, hand.getHandStrength());
+        TestCase.assertEquals(HandStrength.FLUSH, hand.getHandStrength());
     }
 
     @Test
@@ -35,7 +36,7 @@ public class HandTest {
         hand.getCards().add(new Card(Rank.ACE, Suit.CLUBS));
         hand.getCards().add(new Card(Rank.KING, Suit.HEARTS));
 
-        assertEquals(HandStrength.FOUR_OF_A_KIND, hand.getHandStrength());
+        TestCase.assertEquals(HandStrength.FOUR_OF_A_KIND, hand.getHandStrength());
     }
 
     @Test
@@ -46,7 +47,7 @@ public class HandTest {
         hand.getCards().add(new Card(Rank.KING, Suit.HEARTS));
         hand.getCards().add(new Card(Rank.KING, Suit.DIAMONDS));
 
-        assertEquals(HandStrength.FULL_HOUSE, hand.getHandStrength());
+        TestCase.assertEquals(HandStrength.FULL_HOUSE, hand.getHandStrength());
     }
 
     @Test
@@ -57,7 +58,7 @@ public class HandTest {
         hand.getCards().add(new Card(Rank.JACK, Suit.SPADES));
         hand.getCards().add(new Card(Rank.TEN, Suit.SPADES));
 
-        assertEquals(HandStrength.FLUSH, hand.getHandStrength());
+        TestCase.assertEquals(HandStrength.FLUSH, hand.getHandStrength());
     }
 
     @Test
@@ -68,7 +69,7 @@ public class HandTest {
         hand.getCards().add(new Card(Rank.JACK, Suit.SPADES));
         hand.getCards().add(new Card(Rank.TEN, Suit.HEARTS));
 
-        assertEquals(HandStrength.HIGH_CARDS, hand.getHandStrength());
+        TestCase.assertEquals(HandStrength.HIGH_CARDS, hand.getHandStrength());
     }
 
     @Test
@@ -79,7 +80,7 @@ public class HandTest {
         hand.getCards().add(new Card(Rank.KING, Suit.SPADES));
         hand.getCards().add(new Card(Rank.TEN, Suit.HEARTS));
 
-        assertEquals(HandStrength.THREE_OF_A_KIND, hand.getHandStrength());
+        TestCase.assertEquals(HandStrength.THREE_OF_A_KIND, hand.getHandStrength());
     }
 
     @Test
@@ -90,7 +91,7 @@ public class HandTest {
         hand.getCards().add(new Card(Rank.KING, Suit.HEARTS));
         hand.getCards().add(new Card(Rank.TEN, Suit.HEARTS));
 
-        assertEquals(HandStrength.TWO_PAIR, hand.getHandStrength());
+        TestCase.assertEquals(HandStrength.TWO_PAIR, hand.getHandStrength());
     }
 
     @Test
@@ -101,7 +102,7 @@ public class HandTest {
         hand.getCards().add(new Card(Rank.QUEEN, Suit.HEARTS));
         hand.getCards().add(new Card(Rank.TEN, Suit.HEARTS));
 
-        assertEquals(HandStrength.ONE_PAIR, hand.getHandStrength());
+        TestCase.assertEquals(HandStrength.ONE_PAIR, hand.getHandStrength());
     }
 
     @Test
@@ -112,7 +113,7 @@ public class HandTest {
         hand.getCards().add(new Card(Rank.JACK, Suit.SPADES));
         hand.getCards().add(new Card(Rank.TEN, Suit.HEARTS));
 
-        assertEquals(HandStrength.HIGH_CARDS, hand.getHandStrength());
+        TestCase.assertEquals(HandStrength.HIGH_CARDS, hand.getHandStrength());
     }
 
 
